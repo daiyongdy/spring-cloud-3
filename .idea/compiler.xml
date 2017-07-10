@@ -6,17 +6,23 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="api-gateway" />
+        <module name="cloud-config-client" />
+        <module name="cloud-config-server" />
         <module name="eureka-server" />
+        <module name="feign-consumer" />
         <module name="hello-world-service" />
         <module name="hystrix-consumer" />
         <module name="hystrix-dashboard" />
         <module name="ribbon-consumer" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="eurake-server" target="1.7" />
+    <bytecodeTargetLevel target="1.8">
+      <module name="api-gateway" target="1.8" />
+      <module name="cloud-config-client" target="1.8" />
+      <module name="cloud-config-server" target="1.8" />
       <module name="eureka-server" target="1.7" />
-      <module name="hello-service" target="1.7" />
+      <module name="feign-consumer" target="1.8" />
       <module name="hello-world-service" target="1.7" />
       <module name="hystrix-consumer" target="1.7" />
       <module name="hystrix-dashboard" target="1.7" />

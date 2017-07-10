@@ -3,6 +3,7 @@ package com.daiyong;
 import com.netflix.zuul.ZuulFilter;
 import com.netflix.zuul.context.RequestContext;
 import org.apache.commons.lang.StringUtils;
+import org.springframework.context.annotation.Configuration;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -10,6 +11,7 @@ import javax.servlet.http.HttpServletRequest;
  * Created by daiyong on 2017/7/9.
  * email daiyong@coohua.com
  */
+@Configuration
 public class AccessFilter extends ZuulFilter{
 	@Override
 	public String filterType() {

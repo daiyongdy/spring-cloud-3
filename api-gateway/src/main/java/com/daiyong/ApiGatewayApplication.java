@@ -3,7 +3,6 @@ package com.daiyong;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
-import org.springframework.context.annotation.Bean;
 
 @EnableZuulProxy
 @SpringBootApplication
@@ -13,8 +12,8 @@ public class ApiGatewayApplication {
 		SpringApplication.run(ApiGatewayApplication.class, args);
 	}
 
-	@Bean
+/*	@Bean
 	public AccessFilter filter() {
 		return new AccessFilter();
-	}
+	}*/
 }
